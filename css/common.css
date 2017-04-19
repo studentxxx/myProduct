@@ -1,0 +1,302 @@
+/*公共样式---start-----*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+    color: rgb(112, 112, 112);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+input {
+    border: 0;
+    outline: none;
+}
+
+i,
+s,
+e,
+b {
+    text-decoration: none;
+    font-style: normal;
+}
+
+img {
+    vertical-align: top;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.play-small:hover {
+    position: relative;
+}
+
+.play-small:hover::after {
+    content: '';
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -26px;
+    margin-top: -26px;
+    background: url(../media/hover-small.png);
+    background-size: 52px;
+}
+
+.play-big:hover {
+    position: relative;
+}
+
+.play-big:hover::after {
+    content: '';
+    width: 83px;
+    height: 83px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -41px;
+    margin-top: -41px;
+    background: url(../media/hover-big.png);
+    background-size: 83px;
+}
+
+
+/*公共样式---end-----
+音悦台头部----start-----*/
+
+.yyt_head {
+    position: fixed;
+    z-index: 222;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    color: #666;
+    background: url(../media/topbar_bg2.png);
+}
+
+.yyt_head .content {
+    margin: 0 auto;
+    max-width: 1560px;
+    min-width: 1260px;
+    position: relative;
+}
+
+.yyt_head .content .logo {
+    cursor: pointer;
+}
+
+.yyt_head .content .main_meau li {
+    float: left;
+    margin: 0 6px;
+}
+
+.yyt_head .content .main_meau li a,
+.yyt_head .content .tool_meau li a {
+    color: rgb(204, 204, 204);
+    display: block;
+    padding: 0 12px 0 13px;
+    font-size: 14px;
+    height: 50px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.yyt_head .content .main_meau li.current a {
+    color: #cf9;
+}
+
+.yyt_head .content .main_meau li a:hover,
+.yyt_head .content .tool_meau li a:hover {
+    color: #cf9;
+}
+
+.yyt_head .content .tool_meau li {
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    padding: 0 12px 0 13px;
+    text-align: center;
+}
+
+.yyt_head .content .tool_meau li a {
+    padding: 0;
+}
+
+.yyt_head .content .tool_meau li:nth-child(1) a,
+.yyt_head .content .tool_meau li:nth-child(2) a,
+.yyt_head .content .tool_meau li:nth-child(3) a {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-top: 12px;
+    background: url(../media/topbar_icon.png);
+}
+
+.yyt_head .content .tool_meau li:nth-child(1) a {
+    background-position: -39px -32px;
+}
+
+.yyt_head .content .tool_meau li:nth-child(2) a {
+    background-position: 0 -34px;
+}
+
+.yyt_head .content .tool_meau li:nth-child(3) a {
+    background: url(../media/app.png);
+    background-size: 22px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.yyt_head .content .tool_meau li.login {
+    padding: 0;
+}
+
+.yyt_head .content .tool_meau li.login a {
+    padding: 0 12px 0 13px;
+    border-right: 1px solid rgb(204, 204, 204);
+    margin-top: 15px;
+    line-height: 20px;
+    height: 18px;
+}
+
+.yyt_head .content .search {
+    margin: 10px 30px 0 0;
+    width: 215px;
+    height: 29px;
+    font-size: 12px;
+    line-height: 18px;
+    position: relative;
+}
+
+.yyt_head .content .search input {
+    text-indent: 16px;
+    width: 100%;
+    font-size: 12px;
+    border-radius: 14px;
+    height: 100%;
+    background-color: #ccc;
+    color: #999;
+}
+
+.yyt_head .content .search .search_btn {
+    width: 16px;
+    height: 18px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -9px;
+    background: url(../media/topbar_sprite2.png) no-repeat -223px 0;
+}
+
+
+/*音悦台头部----end-----*/
+
+
+/*音悦台底部----start----*/
+
+.yyt_foot {
+    padding: 30px 0;
+    background: #181818;
+    color: #999;
+    text-align: center;
+    min-width: 1000px;
+    line-height: 22px;
+}
+
+.yyt_foot .foot_meau {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.yyt_foot .foot_meau li {
+    float: left;
+}
+
+.yyt_foot .foot_meau li a {
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.yyt_foot .foot_meau li+li a {
+    border-left: 1px dotted white;
+}
+
+.yyt_foot .foot_meau li a:hover {
+    color: #690;
+}
+
+.yyt_foot p {
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.yyt_foot .foot_copyright i {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: top;
+    background: url(../media/culture.png);
+    background-size: 25px;
+    margin-right: 5px;
+}
+
+.yyt_foot .foot_lesson {
+    display: inline-block;
+    position: relative;
+}
+
+.yyt_foot .foot_lesson i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    background: url(../media/ghs.png);
+    background-size: 20px;
+    margin-right: 2px;
+}
+
+.yyt_foot .foot_lesson .biaoshi {
+    position: absolute;
+    bottom: 0;
+    right: -43px;
+}
+
+
+/*音悦台底部----end----*/
